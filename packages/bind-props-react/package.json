@@ -1,0 +1,29 @@
+{
+	"name": "bind-props-react",
+	"version": "1.0.0",
+	"description": "type-safety functional component props binding for react",
+	"scripts": {
+		"build": "tsc && bun build ./src/index.tsx --outdir dist/",
+		"clean": "rm -rf dist"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"license": "MIT",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nickshiro/bind-props"
+	},
+	"files": [
+		"dist"
+	],
+	"peerDependencies": {
+		"react": "^16"
+	}
+}

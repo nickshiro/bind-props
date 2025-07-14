@@ -1,24 +1,19 @@
 {
-  "name": "bind-props",
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
-  },
-  "devDependencies": {
-    "prettier": "^3.6.2",
-    "turbo": "^2.5.4",
-    "typescript": "5.8.3"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.2.18",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+	"name": "bind-props",
+	"private": true,
+	"packageManager": "bun@1.2.18",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"build": "bun run turbo run build"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.1",
+		"turbo": "^2.5.4",
+		"typescript": "^5.8.3"
+	},
+	"engines": {
+		"node": ">=18"
+	}
 }
